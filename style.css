@@ -1,0 +1,95 @@
+/********** 標題列 **********/
+.title-container {
+    height: 50px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 標題 */
+.title-container .text-container {
+    padding-left: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+/* 按鈕 */
+.title-container .image-container {
+    height: 100%;
+    display: flex;
+}
+.title-container .add-container,
+.title-container .search-container {
+    padding: calc((50px - 1.5rem) / 2) 20px;
+    border-left: 2px solid #ddd;
+}
+.title-container #addButton,
+.title-container #searchButton {
+    font-size: 1.5rem;
+    color: #bbb;
+    cursor: pointer;
+}
+.title-container #addButton:hover,
+.title-container #searchButton:hover {
+    color: #333;
+    transition: 0.5s;
+}
+
+/********** 表格 **********/
+.table #cardtable {
+    width: 100%;
+    border-spacing: 0;
+    border-top: 1px solid #ccc;
+}
+.table thead {
+    height: 50px;
+    color: #fff;
+    background-color: #333;
+}
+.table tr {
+    height: 40px;
+    text-align: left;
+    border: none;
+}
+.table tr:nth-child(even) {
+    background-color: #e0e5eb;
+}
+.table th {
+    padding: 0 10px;
+}
+.table td {
+    padding: 0 10px;
+    color: #777;
+}
+.table td:hover {
+    background-color: #fff;
+}
+.table tbody tr:hover {
+    color: #333;
+    background-color: #ffa;
+}
+/* 提醒背景 */
+.highlighted {
+    background-color: #ffa;
+}
+
+/********** 刪除鈕 **********/
+.update-button,
+.delete-button {
+    font-size: 1.5rem;
+    color: #bbb;
+    cursor: pointer;
+}
+.update-button:hover,
+.delete-button:hover {
+    color: #333;
+    transition: 0.5s;
+}
+
+/********** 新增、修改 modal body **********/
+.add-fields-container,
+.update-fields-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+}
